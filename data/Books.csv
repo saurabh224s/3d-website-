@@ -1,0 +1,9 @@
+Order,Book name,Subheading,Description,Button text,Button link,Colour code
+1,ChatGPT,Conversational intelligence,"A general-purpose AI assistant for writing, analysis, brainstorming, coding, and everyday questions.",Visit ChatGPT,https://chatgpt.com/,C01
+2,Claude,Thoughtful AI assistant,"An AI assistant from Anthropic designed for writing, analysis, coding, and long-context work.",Visit Claude,https://claude.ai/,C05
+3,Google Gemini,Google's AI assistant,"Google's multimodal AI assistant for writing, reasoning, research, and creative tasks.",Visit Gemini,https://gemini.google.com/,C04
+4,Perplexity,Answer engine,"An AI search and answer engine that combines conversational responses with web research and citations.",Visit Perplexity,https://www.perplexity.ai/,C02
+5,Midjourney,AI image creation,"A generative image platform focused on creating visual concepts and artwork from text prompts.",Visit Midjourney,https://www.midjourney.com/,C03
+6,GitHub Copilot,AI pair programmer,"An AI coding assistant that helps developers write, explain, test, and navigate code.",Visit GitHub Copilot,https://github.com/features/copilot,C07
+7,NotebookLM,Research companion,"Google's research assistant for working with your own source material and generating grounded summaries and insights.",Visit NotebookLM,https://notebooklm.google.com/,C11
+8,Runway,Creative video AI,"A creative AI platform for generating and editing video and other visual media.",Visit Runway,https://runwayml.com/,C08
