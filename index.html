@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#27262c"><meta name="description" content="The AI Toolshelf — a living 3D bookshelf powered by Google Sheets.">
+<title>The AI Toolshelf</title>
+<link rel="stylesheet" href="./styles.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"}}</script>
+</head>
+<body>
+<div id="app">
+  <div id="loading"><div class="loader-book"></div><span>Building the shelf…</span></div>
+  <canvas id="scene" aria-label="Interactive 3D bookshelf"></canvas>
+  <div class="grain"></div>
+  <header class="top">
+    <div><p class="eyebrow">LIVING EDITION</p><h1 id="shelf-name">The AI Toolshelf</h1><p id="subtitle">A shelf of AI tools worth knowing</p></div>
+    <div class="status">
+      <div><div id="edition">EDITION 01</div><div id="colour-name">Haze</div></div>
+      <div class="sync"><i id="sync-dot"></i><span id="sync-text">Syncing…</span></div>
+      <button id="mute" aria-label="Mute sound">◼</button><input id="volume" type="range" min="0" max="1" step=".01" value=".35" aria-label="Volume">
+    </div>
+  </header>
+  <main>
+    <section class="selection">
+      <div class="counter" id="counter">01 / 08</div><h2 id="title">Loading…</h2><p id="subheading"></p>
+    </section>
+    <button id="open-btn" class="open-btn">( OPEN )</button>
+    <div class="controls"><div id="markers" class="markers"></div><span>WHEEL · ARROWS · SELECT</span></div>
+  </main>
+  <aside id="panel" class="panel" aria-hidden="true">
+    <button id="close" class="close" aria-label="Close book">×</button>
+    <div class="panel-inner">
+      <p class="eyebrow" id="panel-volume">VOLUME 01 · HAZE</p><h2 id="panel-title"></h2><p class="italic" id="panel-subheading"></p><p id="description"></p>
+      <a id="book-link" class="pill" target="_blank" rel="noopener noreferrer"></a>
+      <div class="panel-actions"><button id="pages-prev">←</button><span id="page-label">COVER</span><button id="pages-next">→</button><button id="reset">RESET VIEW</button></div>
+    </div>
+  </aside>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div id="live" class="sr-only" aria-live="polite"></div>
+  <section id="fallback" class="fallback" hidden><div class="fallback-head"><h2>The shelf is available as a grid</h2><p>WebGL is unavailable on this device.</p></div><div id="fallback-grid"></div></section>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body></html>
