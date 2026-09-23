@@ -1,19 +1,17 @@
 # The AI Toolshelf
 
-A no-build 3D bookshelf powered by a Google Sheet.
+A no-build 3D bookshelf powered by an optional Google Sheet.
 
 ## Run locally
 
-```powershell
-python -m http.server 4322
-```
+`python -m http.server 4322`
 
-Open http://localhost:4322/
+Open `http://localhost:4322/`.
 
-## Google Sheets
+## Configuration
 
-Set `sheet` in `config.js` to a public Google Sheet URL. The app polls both configured tabs every 15 seconds and falls back to `data/Books.csv` and `data/Colours.csv` when no sheet is configured.
+Set `sheet` in `config.js` for live Google Sheet data. When it is empty, the app can use checked-in CSV data. Keep private spreadsheet URLs and credentials out of source control.
 
 ## Deploy
 
-This is a static site: deploy the repository to Netlify, Vercel, GitHub Pages, or any static host.
+This is a static site and can be deployed to GitHub Pages, Netlify, Vercel, or another static host.
